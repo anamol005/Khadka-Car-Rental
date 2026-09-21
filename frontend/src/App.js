@@ -7,12 +7,9 @@ import { LangContext } from "@/i18n";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
-import About from "@/components/About";
 import Services from "@/components/Services";
 import Vehicle from "@/components/Vehicle";
-import Destinations from "@/components/Destinations";
 import Reviews from "@/components/Reviews";
-import FAQ from "@/components/FAQ";
 import Booking from "@/components/Booking";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -32,12 +29,9 @@ function App() {
         <main>
           <Hero />
           <Marquee />
-          <About />
           <Services />
           <Vehicle />
-          <Destinations />
           <Reviews />
-          <FAQ />
           <Booking />
           <Contact />
         </main>

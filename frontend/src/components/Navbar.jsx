@@ -19,12 +19,9 @@ export const scrollToId = (id) => (e) => {
 
 const LINKS = [
   "home",
-  "about",
   "services",
   "vehicle",
-  "destinations",
   "reviews",
-  "faq",
   "contact",
 ];
 
