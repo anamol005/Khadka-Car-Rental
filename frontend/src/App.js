@@ -1,7 +1,5 @@
 import { useState } from "react";
-
 import "@/App.css";
-
 import { LangContext } from "@/i18n";
 
 import Navbar from "@/components/Navbar";
@@ -37,7 +35,6 @@ function App() {
         </main>
 
         <Footer />
-
         <Floating />
       </div>
     </LangContext.Provider>

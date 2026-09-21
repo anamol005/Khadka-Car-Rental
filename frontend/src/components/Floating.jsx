@@ -1,14 +1,10 @@
 import { useEffect, useState } from "react";
-
 import { Phone, MessageCircle, X } from "lucide-react";
-
 import { useLang, translations, TEL_LINK, waLink } from "@/i18n";
 
 export default function Floating() {
   const { lang } = useLang();
-
   const t = translations[lang].floating;
-
   const [showMessage, setShowMessage] = useState(true);
 
   useEffect(() => {
@@ -32,13 +28,13 @@ export default function Floating() {
               href={wa}
               target="_blank"
               rel="noreferrer"
-              className="block rounded-2xl border border-white/10 bg-[#111419] px-4 py-4 pr-10 shadow-xl hover:bg-[#15191f] transition-colors"
+              className="block rounded-2xl border border-[#E3E3DE] bg-white px-4 py-4 pr-10 shadow-lg hover:bg-[#FCFCFA] transition-colors"
             >
-              <p className="text-sm font-semibold text-green-400">
+              <p className="text-sm font-semibold text-green-600">
                 Chat with Sitaram Khadka
               </p>
 
-              <p className="mt-1 text-sm text-zinc-300 leading-relaxed">
+              <p className="mt-1 text-sm text-[#5F5F5F] leading-relaxed">
                 Click for price quote & route availability.
               </p>
             </a>
@@ -49,7 +45,7 @@ export default function Floating() {
                 e.stopPropagation();
                 setShowMessage(false);
               }}
-              className="absolute top-3 right-3 text-zinc-500 hover:text-white"
+              className="absolute top-3 right-3 text-[#888888] hover:text-[#111111]"
               aria-label="Close message"
             >
               <X size={16} />
@@ -70,13 +66,13 @@ export default function Floating() {
       </div>
 
       <div
-        className="fixed z-40 bottom-0 inset-x-0 md:hidden bg-[#0b0d10]/98 border-t border-white/10 p-3 flex gap-3"
+        className="fixed z-40 bottom-0 inset-x-0 md:hidden bg-white/98 border-t border-[#E3E3DE] p-3 flex gap-3"
         data-testid="sticky-mobile-bar"
       >
         <a
           href={TEL_LINK}
           data-testid="sticky-call-button"
-          className="flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-[#D6A84B] py-3 text-sm font-semibold text-black hover:bg-[#BE8F32]"
+          className="flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-[#D9A441] py-3 text-sm font-semibold text-black hover:bg-[#C38F2F] transition-colors"
         >
           <Phone size={16} />
           {t.call}
@@ -87,7 +83,7 @@ export default function Floating() {
           target="_blank"
           rel="noreferrer"
           data-testid="sticky-whatsapp-button"
-          className="flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-green-600 py-3 text-sm font-semibold text-white hover:bg-green-700"
+          className="flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-green-600 py-3 text-sm font-semibold text-white hover:bg-green-700 transition-colors"
         >
           <MessageCircle size={16} />
           {t.wa}

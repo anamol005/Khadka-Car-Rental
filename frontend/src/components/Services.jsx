@@ -11,7 +11,6 @@ import {
 } from "lucide-react";
 
 import { Reveal, SectionHead } from "@/components/Reveal";
-
 import { useLang, translations, waLink } from "@/i18n";
 
 const ICONS = [
@@ -27,13 +26,12 @@ const ICONS = [
 
 export default function Services() {
   const { lang } = useLang();
-
   const t = translations[lang].services;
 
   return (
     <section
       id="services"
-      className="relative py-16 sm:py-24 lg:py-28 bg-[#0d1014]"
+      className="relative py-10 sm:py-14 lg:py-16 bg-[#F7F7F3]"
       data-testid="services-section"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-16">
@@ -51,18 +49,18 @@ export default function Services() {
             return (
               <Reveal key={s.t} delay={(i % 4) * 0.06}>
                 <div
-                  className="group rounded-2xl border border-white/10 bg-[#14181d] p-6 h-full flex flex-col hover:border-white/20 transition-colors duration-300"
+                  className="group rounded-2xl border border-[#E3E3DE] bg-white p-6 h-full flex flex-col hover:border-[#D9A441]/60 transition-colors duration-300"
                   data-testid={`service-card-${i}`}
                 >
-                  <span className="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center">
-                    <Icon size={19} className="text-[#D6A84B]" />
+                  <span className="w-11 h-11 rounded-xl bg-[#F5F1E7] border border-[#E8DDC2] flex items-center justify-center">
+                    <Icon size={19} className="text-[#D9A441]" />
                   </span>
 
-                  <h3 className="font-display mt-5 text-lg font-semibold text-white">
+                  <h3 className="font-display mt-5 text-lg font-semibold text-[#111111]">
                     {s.t}
                   </h3>
 
-                  <p className="mt-2 text-sm text-zinc-400 leading-relaxed flex-1">
+                  <p className="mt-2 text-sm text-[#5F5F5F] leading-relaxed flex-1">
                     {s.d}
                   </p>
 
@@ -73,7 +71,7 @@ export default function Services() {
                     target="_blank"
                     rel="noreferrer"
                     data-testid={`service-${i}-whatsapp-button`}
-                    className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-green-400 hover:text-green-300 transition-colors"
+                    className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-green-600 hover:text-green-700 transition-colors"
                   >
                     <MessageCircle size={14} />
                     {t.enquire}

@@ -1,9 +1,8 @@
 import { useState } from "react";
 
-import { Phone, MessageCircle, Send, CheckCircle2 } from "lucide-react";
+import { Phone, Send, CheckCircle2 } from "lucide-react";
 
 import { Reveal, SectionHead } from "@/components/Reveal";
-
 import { useLang, translations, TEL_LINK, waLink } from "@/i18n";
 
 const initial = {
@@ -20,11 +19,9 @@ const initial = {
 
 export default function Booking() {
   const { lang } = useLang();
-
   const t = translations[lang].booking;
 
   const [form, setForm] = useState(initial);
-
   const [sent, setSent] = useState(false);
 
   const set = (k) => (e) => {
@@ -50,20 +47,19 @@ export default function Booking() {
     ].filter(Boolean);
 
     window.open(waLink(lines.join("\n")), "_blank");
-
     setSent(true);
   };
 
   const inputCls =
-    "w-full rounded-xl bg-[#0f1318] border border-white/10 px-4 py-3 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-white/25 focus:bg-[#12171d] transition-colors";
+    "w-full rounded-xl bg-white border border-[#DCDCD7] px-4 py-3 text-sm text-[#111111] placeholder-[#999999] focus:outline-none focus:border-[#D9A441] focus:ring-2 focus:ring-[#D9A441]/10 transition-colors";
 
   const labelCls =
-    "block text-xs font-semibold tracking-wider uppercase text-zinc-400 mb-2";
+    "block text-xs font-semibold tracking-wider uppercase text-[#666666] mb-2";
 
   return (
     <section
       id="booking"
-      className="relative py-16 sm:py-24 lg:py-28 bg-[#0d1014]"
+      className="relative py-10 sm:py-14 lg:py-16 bg-[#F7F7F3]"
       data-testid="booking-section"
     >
       <div className="mx-auto max-w-5xl px-4 sm:px-8">
@@ -76,18 +72,18 @@ export default function Booking() {
 
         <Reveal delay={0.1}>
           <div
-            className="mt-10 rounded-3xl border border-white/10 bg-[#14181d] p-6 sm:p-10"
+            className="mt-8 rounded-3xl  border border-[#E3E3DE] bg-white p-6 sm:p-10"
             data-testid="booking-form-card"
           >
             {sent ? (
               <div className="text-center py-10" data-testid="booking-success">
-                <CheckCircle2 size={52} className="mx-auto text-green-500" />
+                <CheckCircle2 size={52} className="mx-auto text-green-600" />
 
-                <h3 className="font-display mt-5 text-2xl font-bold text-white">
+                <h3 className="font-display mt-5 text-2xl font-bold text-[#111111]">
                   {t.successTitle}
                 </h3>
 
-                <p className="mt-3 text-zinc-400 max-w-md mx-auto">
+                <p className="mt-3 text-[#5F5F5F] max-w-md mx-auto">
                   {t.success}
                 </p>
 
@@ -95,7 +91,7 @@ export default function Booking() {
                   <a
                     href={TEL_LINK}
                     data-testid="booking-success-call"
-                    className="inline-flex items-center gap-2 rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-white hover:bg-sky-600"
+                    className="inline-flex items-center gap-2 rounded-full bg-[#D9A441] px-6 py-3 text-sm font-semibold text-black hover:bg-[#C38F2F] transition-colors"
                   >
                     <Phone size={15} />
                     {t.call}
@@ -107,7 +103,7 @@ export default function Booking() {
                       setForm(initial);
                     }}
                     data-testid="booking-new-enquiry"
-                    className="rounded-full px-6 py-3 text-sm font-semibold text-zinc-300 border border-white/15 hover:border-white/30 hover:bg-white/5"
+                    className="rounded-full px-6 py-3 text-sm font-semibold text-[#333333] border border-[#D8D8D2] bg-white hover:bg-[#F3F3F0] transition-colors"
                   >
                     {lang === "ne" ? "नयाँ सोधपुछ" : "New Enquiry"}
                   </button>
@@ -277,7 +273,7 @@ export default function Booking() {
                   <button
                     type="submit"
                     data-testid="booking-submit-button"
-                    className="inline-flex items-center gap-2 rounded-full bg-green-600 px-7 py-3.5 text-sm font-semibold text-white hover:bg-green-700"
+                    className="inline-flex items-center gap-2 rounded-full bg-green-600 px-7 py-3.5 text-sm font-semibold text-white hover:bg-green-700 transition-colors"
                   >
                     <Send size={15} />
                     {t.submit}
@@ -286,7 +282,7 @@ export default function Booking() {
                   <a
                     href={TEL_LINK}
                     data-testid="booking-call-button"
-                    className="inline-flex items-center gap-2 rounded-full bg-[#D6A84B] px-6 py-3.5 text-sm font-semibold text-black hover:bg-[#BE8F32]"
+                    className="inline-flex items-center gap-2 rounded-full bg-[#D9A441] px-6 py-3.5 text-sm font-semibold text-black hover:bg-[#C38F2F] transition-colors"
                   >
                     <Phone size={15} />
                     {t.call}
