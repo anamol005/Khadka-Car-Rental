@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0d10;
+  --surface: #111419;
+  --card: #171b21;
+  --line: rgba(255, 255, 255, 0.08);
+
+  --blue: #d6a84b;
+  --blue-dark: #be8f32;
+
+  --red: #dc3f3f;
+  --wa: #25d366;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #f8fafc;
+
+  font-family: "Plus Jakarta Sans", "Noto Sans Devanagari", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: "Outfit", "Noto Sans Devanagari", sans-serif;
+}
+
+.font-mono2 {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.font-nepali,
+.font-nepali .font-display,
+.font-nepali .font-mono2 {
+  font-family: "Noto Sans Devanagari", "Plus Jakarta Sans", sans-serif;
+}
+
+::selection {
+  background: rgba(47, 149, 184, 0.25);
+  color: #ffffff;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0d10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2e35;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #383d46;
+}
+
+/* Reusable components */
+
+@layer components {
+  .glass {
+    background: #111419;
+    border: 1px solid var(--line);
+  }
+
+  .glow-btn {
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .glow-btn:hover {
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, 0.22);
+  }
+
+  .glow-wa {
+    box-shadow: none;
+  }
+
+  .glow-wa:hover {
+    box-shadow: none;
+  }
+
+  .eyebrow {
+    @apply text-xs uppercase tracking-[0.22em];
+    color: #d6a84b;
+  }
+}
+
+/* Old animation classes kept harmless */
+
+.marquee-track {
+  animation: none;
+}
+
+.float-y {
+  animation: none;
+}
+
+.shine-host::after {
+  display: none;
+}
+
+.hero-grid-bg {
+  background-image: none;
+}
+
+.map-dark {
+  filter: none;
+}
+
+/* Forms */
+
+input,
+select,
+textarea {
+  color-scheme: dark;
+}
+
+/* Simple transitions */
+
+button,
+a {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease;
+}

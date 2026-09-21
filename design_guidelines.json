@@ -1,0 +1,137 @@
+{
+  "project_name": "Khadka Car Rental Service",
+  "app_type": "landing_page",
+  "theme": "High-end Dark Automotive Luxury",
+  "language_support": {
+    "languages": ["English", "Nepali"],
+    "default": "English",
+    "toggle_component": "Navbar language pill switcher with EN / NE state"
+  },
+  "typography": {
+    "heading_font": "Outfit, Clash Display, or System Sans (Bold, Tight Tracking)",
+    "body_font": "Inter or Plus Jakarta Sans",
+    "mono_font": "JetBrains Mono for technical vehicle specs and badges",
+    "scale": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white",
+      "h3_card": "text-xl sm:text-2xl font-semibold text-white",
+      "body": "text-base text-zinc-300 leading-relaxed",
+      "subtext": "text-sm text-zinc-400",
+      "label_badge": "text-xs font-mono uppercase tracking-[0.2em] text-cyan-400"
+    }
+  },
+  "colors": {
+    "background_main": "#07080A",
+    "background_surface": "#0F1115",
+    "background_card": "#15181E",
+    "border_subtle": "rgba(255, 255, 255, 0.08)",
+    "border_active": "rgba(0, 229, 255, 0.3)",
+    "text_primary": "#F8FAFC",
+    "text_secondary": "#94A3B8",
+    "text_muted": "#64748B",
+    "accent_electric_blue": "#00E5FF",
+    "accent_cyan_glow": "#38BDF8",
+    "accent_nepal_red": "#EF4444",
+    "whatsapp_green": "#22C55E",
+    "gradients": {
+      "blue_glow": "radial-gradient(circle at 50% 0%, rgba(0, 229, 255, 0.15) 0%, transparent 70%)",
+      "card_surface": "linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%)",
+      "hero_overlay": "linear-gradient(180deg, rgba(7, 8, 10, 0.4) 0%, rgba(7, 8, 10, 0.95) 100%)"
+    }
+  },
+  "layout_and_spacing": {
+    "container_padding": "px-4 sm:px-8 lg:px-16",
+    "section_gap": "py-16 sm:py-24 lg:py-32",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8",
+    "card_padding": "p-6 sm:p-8"
+  },
+  "components_and_sections": [
+    {
+      "section": "Header Nav",
+      "description": "Sticky glassmorphism navigation bar with brand logo 'KHADKA EV', nav links, bilingual toggle (EN/NE), and header CTAs for Direct Call & WhatsApp.",
+      "features": ["EN/NE language switcher", "Glass backdrop-blur-md", "Call CTA (9763743940)", "WhatsApp CTA (9802759592)"]
+    },
+    {
+      "section": "Kinetic Hero",
+      "description": "Large line-by-line masked headline reveal, sub-headline, floating key badges, and interactive/parallax presentation of Tata Curvv EV hero visual.",
+      "features": ["Masked kinetic headline animation", "3D vehicle angle tilt / subtle floating effect", "Direct Call & WhatsApp 'Book Your Ride' action buttons", "Trust pills: 100% Electric, Owner-Driven Sitaram Khadka, 5-Star NCAP Safety"]
+    },
+    {
+      "section": "About Manifesto",
+      "description": "Numbered manifesto chapters (01 Owner & Chauffeur, 02 Luxury Tata Curvv EV, 03 Eastern Nepal Specialist, 04 Zero Emission Comfort) detailing Sitaram Khadka's personal dedication to private, safe, ultra-quiet travel.",
+      "features": ["Chapter numbers in large mono font", "Driver bio quote", "Owner-driver advantage story"]
+    },
+    {
+      "section": "Services Grid",
+      "description": "8 distinct luxury travel cards for Airport Pickup & Drop, City Rides, Long-Distance, Nepal Tours, Weddings & Events, Business Travel, Family Trips, and Custom Trips.",
+      "features": ["Hover shine effects", "Deep-link WhatsApp enquiry per service option", "'WhatsApp for Price' button on each card"]
+    },
+    {
+      "section": "Vehicle Showcase (Tata Curvv EV)",
+      "description": "Interactive spec breakdown for the vehicle with highlighted key metrics: 55 kWh Battery, 98 kW Motor, ~380 km Real Range, 5 Seats, 500 L Boot Space, 6 Airbags, 5-Star Bharat NCAP.",
+      "features": ["Interactive tab switcher for Specs vs Features", "High-voltage technology visual indicators", "Interior & Exterior spotlight photography"]
+    },
+    {
+      "section": "Destinations & Coverage",
+      "description": "Coverage starting from Itahari base to major Nepal destinations (Kathmandu, Pokhara, Dharan, Biratnagar, Janakpur, Chitwan, Lumbini, Birtamode, Ilam).",
+      "features": ["Interactive destination chips/cards", "Distance & travel time indicators", "Direct WhatsApp pre-filled inquiry button per route"]
+    },
+    {
+      "section": "Reviews & Testimonials",
+      "description": "Testimonial cards with customer feedback, clearly marked with 'Sample Customer Review' labels.",
+      "features": ["Star ratings", "Route taken badges", "Clean luxury glass cards"]
+    },
+    {
+      "section": "Editorial Marquee Strip",
+      "description": "Slow luxury kinetic text ticker continuously moving horizontally.",
+      "features": ["Low-contrast luxury text", "Key keywords: ITAHARI • TATA CURVV EV • ZERO EMISSION • VIP PRIVATE CHAUFFEUR • ALL NEPAL TOURS"]
+    },
+    {
+      "section": "FAQ Accordion",
+      "description": "Frequently asked questions regarding booking process, charging stops, luggage space, driver language, and payment options.",
+      "features": ["Shadcn Accordion style with clean smooth motion", "Clear answers clarifying 'Call or WhatsApp for Custom Price'"]
+    },
+    {
+      "section": "WhatsApp Booking & Enquiry Form",
+      "description": "Comprehensive form allowing users to enter Full Name, Phone, Pickup Location, Destination, Date, Time, Trip Type, Passengers, and Special Message. On submit, formats a neat WhatsApp text string and triggers `https://wa.me/9779802759592?text=...`.",
+      "features": ["Dynamic form validation with prefilled deep link trigger", "Instant 'Send via WhatsApp' action", "Fallback Call button"]
+    },
+    {
+      "section": "Contact & Embedded Location Map",
+      "description": "Contact info cards (Phone: +977 9763743940, WhatsApp: +977 9802759592, Facebook link, Location: Itahari, Sunsari, Nepal) plus embedded Google Map.",
+      "features": ["Dark-themed iframe map embed", "Direct tap-to-call links", "Facebook page badge"]
+    },
+    {
+      "section": "Sticky Mobile Call & WhatsApp Bar",
+      "description": "Fixed bottom bar on mobile viewports for effortless 1-tap conversion.",
+      "features": ["Call Now CTA button", "WhatsApp CTA button", "z-50 viewport sticky layer"]
+    },
+    {
+      "section": "Floating WhatsApp Badge",
+      "description": "Site-wide floating circular WhatsApp button in bottom-right corner.",
+      "features": ["Pulsing green indicator", "Direct deep link trigger"]
+    }
+  ],
+  "image_urls": {
+    "hero_car_ev": "https://images.pexels.com/photos/33027402/pexels-photo-33027402.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "car_night_front": "https://images.unsplash.com/photo-1623273938688-615a9b924389?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHw0fHxmdXR1cmlzdGljJTIwZWxlY3RyaWMlMjBTVVYlMjBjYXIlMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3ODk5MzI4MjF8MA&ixlib=rb-4.1.0&q=85",
+    "car_side_sleek": "https://images.unsplash.com/photo-1773072318828-1bb64ad83758?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwzfHxmdXR1cmlzdGljJTIwZWxlY3RyaWMlMjBTVVYlMjBjYXIlMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3ODk5MzI4MjF8MA&ixlib=rb-4.1.0&q=85",
+    "nepal_highway_scenery": "https://images.pexels.com/photos/35869362/pexels-photo-35869362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "nepal_mountain_road": "https://images.unsplash.com/photo-1760007471922-2aac8483348c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwyfHxuZXBhbCUyMG1vdW50YWluJTIwaGlnaHdheSUyMHRyYXZlbCUyMHNjZW5lcnl8ZW58MHx8fHwxNzg5OTMyODIxfDA&ixlib=rb-4.1.0&q=85",
+    "driver_cockpit": "https://images.pexels.com/photos/8425403/pexels-photo-8425403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "steering_wheel_detail": "https://images.pexels.com/photos/8425414/pexels-photo-8425414.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "contact_details": {
+    "owner_driver_name": "Sitaram Khadka",
+    "phone": "9763743940",
+    "whatsapp": "9802759592",
+    "phone_international": "+9779763743940",
+    "whatsapp_international": "9779802759592",
+    "location": "Itahari, Sunsari, Koshi Province, Nepal"
+  },
+  "instructions_to_main_agent": {
+    "general": "Build a single-page premium scroll website for Khadka Car Rental Service in React with Tailwind CSS and Framer Motion. Ensure language toggle (English/Nepali) updates all text smoothly.",
+    "testing_requirement": "EVERY interactive element (buttons, links, form inputs, language toggle, accordion items, service cards, mobile bar) MUST include clear data-testid attributes.",
+    "booking_flow": "No online payment or fare calculator. Every price inquiry redirects to direct Call (9763743940) or WhatsApp (9802759592) deep links with descriptive pre-filled text."
+  }
+}
